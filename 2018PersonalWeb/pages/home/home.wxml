@@ -1,0 +1,93 @@
+<view class="contain">
+  <view class="basic-info wrapper">
+    <view class="title">
+      <view class="title-name">
+        <i class="icon iconfont icon-jiben"></i>
+        <text>基本信息</text>
+      </view>
+      <i class="icon iconfont icon-arrow"></i>
+    </view>
+    <view class="content">
+      <dl wx:for="{{basciInfo}}">
+        <dt>{{item.descr}}:</dt>
+        <dd>{{item.info}}</dd>
+      </dl>
+    </view>
+  </view>
+
+  <view class="job-info wrapper">
+    <view class="title">
+      <view class="title-name">
+        <i class="icon iconfont icon-work"></i>
+        <text>工作经历</text>
+      </view>
+      <i class="icon iconfont icon-arrow"></i>
+    </view>
+    <view class="content same-list">
+      <view class="job-list same" wx:for="{{jobInfo}}">
+        <span class="time-icon">
+          <i></i>
+        </span>
+        <text>{{item.time}}</text>
+        <text class="name">{{item.name}}</text>
+        <text>{{item.duty}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="education-info wrapper">
+    <view class="title">
+      <view class="title-name">
+        <i class="icon iconfont icon-jiaoyu"></i>
+        <text>教育经历</text>
+      </view>
+      <i class="icon iconfont icon-arrow"></i>
+    </view>
+    <view class="content same-list">
+      <view class="education-list same" wx:for="{{education}}">
+        <span class="time-icon">
+          <i></i>
+        </span>
+        <text>{{item.time}}</text>
+        <text class="name">{{item.name}}</text>
+        <text>{{item.major}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="project-info wrapper">
+    <view class="title">
+      <view class="title-name">
+        <i class="icon iconfont icon-xiangmu"></i>
+        <text>项目经历</text>
+      </view>
+      <i class="icon iconfont icon-arrow"></i>
+    </view>
+    <view class="content same-list">
+      <view class="project-list same" wx:for="{{project}}">
+        <span class="time-icon">
+          <i></i>
+        </span>
+        <text>{{item.time}}</text>
+        <text class="name">{{item.name}}</text>
+        <text>{{item.company}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="skill-info wrapper">
+    <view class="title">
+      <view class="title-name">
+        <i class="icon iconfont icon-jiaoyu"></i>
+        <text>技能特长</text>
+      </view>
+      <i class="icon iconfont icon-arrow"></i>
+    </view>
+    <view class="content">
+      <view class="skill-list" wx:for="{{skills}}">
+        <text>{{item.name}}</text>
+        <progress percent='{{item.score}}' active='true'></progress>
+      </view>
+    </view>
+  </view>
+</view>
