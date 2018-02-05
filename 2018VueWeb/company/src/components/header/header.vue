@@ -9,14 +9,14 @@
         <span></span>
       </div>
       <div class="right-wrapper">
-        <span></span>
+        <router-link to="/"><span></span></router-link>
       </div>
     </div>
     <div v-show="slideShow" class="slide-wrapper">
       <nav>
-        <ul>
-          <li v-for="item in slide">{{item}}</li>
-        </ul>
+        <router-link to="/" @click.native="clickSlide()">首页/ Home</router-link>
+        <router-link to="about" @click.native="clickSlide()">关于/ About</router-link>
+        <router-link to="product" @click.native="clickSlide()">产品/ Product</router-link>
       </nav>
       <div class="click" @click="clickSlide"></div>
     </div>
@@ -27,8 +27,7 @@
   export default {
     data() {
       return {
-        slide: ['首页/ Home', '关于/ About', '产品/ Product'],
-        slideShow: false,
+        slideShow: false
       }
     },
     methods: {
@@ -117,11 +116,16 @@
     color: #fff;
     z-index: 999;
     overflow-y: auto;
-  }
-
-  .slide-wrapper ul {
     padding-top: 30px;
     font-size: 14px;
+  }
+
+  .slide-wrapper a {
+    display: block;
+    color:#fff;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
   }
 
   .slide-wrapper ul li {
