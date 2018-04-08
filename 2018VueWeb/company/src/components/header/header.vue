@@ -17,6 +17,7 @@
         <router-link to="/" @click.native="clickSlide()">首页/ Home</router-link>
         <router-link to="about" @click.native="clickSlide()">关于/ About</router-link>
         <router-link to="product" @click.native="clickSlide()">产品/ Product</router-link>
+        <router-link to="member" @click.native="clickSlide()">会员/ Member</router-link>
       </nav>
       <div class="click" @click="clickSlide"></div>
     </div>

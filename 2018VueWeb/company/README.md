@@ -39,8 +39,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 7. cnpm run dev热加载中运行我们的应用
 
-8. 为我们的路由、XHR请求、数据管理下载三个库,使用bootstrap作为我的UI库
-> npm i vue-resource vue-router vuex bootstrap --save
+8. 为我们的路由、XHR请求、数据管理下载三个库
+> npm i vue-resource vue-router vuex --save
 
 9. 全局安装vue-router 和 vuex
 >  cnpm install vue-router
@@ -51,3 +51,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 11. 安装vue 的轮播插件
 >  cnpm install vue-awesome-swiper --save
+
+12. 安装vue-resource 到当前项目中，找到当前的项目
+>  cnpm install vue-resource --save
