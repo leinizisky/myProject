@@ -1,6 +1,7 @@
+
 import React, { PureComponent, Component } from 'react'
 import BScroll from 'better-scroll'
-import { autobind } from 'core-decorators'
+//import { autobind } from 'core-decorators'
 import PropTypes from 'prop-types'
 
 class Scroll extends Component {
@@ -65,7 +66,6 @@ class Scroll extends Component {
 
     }
 
-  @autobind
   _initScroll() {
     let wrapper = this.wrapper
     if (!wrapper) {
@@ -102,27 +102,25 @@ class Scroll extends Component {
   }
 
   // 启用 better-scroll, 默认 开启。
-  @autobind
   enable() {
     this.scroll && this.scroll.enable()
   }
   // 作用：禁用 better-scroll，DOM 事件（如 touchstart、touchmove、touchend）的回调函数不再响应。
-  @autobind
+
   disable() {
     this.scroll && this.scroll.disable()
   }
   // 高宽变化的时候去刷新scroll
-  @autobind
+
   refresh() {
     this.scroll && this.scroll.refresh()
   }
-  @autobind
+
   stop() {
     // alert('stop')
     this.scroll && this.scroll.stop()
   }
 
-  @autobind
   destroy() {
     this.scroll && this.scroll.destroy()
   }
@@ -132,12 +130,10 @@ class Scroll extends Component {
   // }
 
 
-  @autobind
   scrollTo() {
     this.scroll && this.scroll.scrollTo.apply(this.scroll, arguments)
   }
 
-  @autobind
   scrollToElement() {
 
     console.log(arguments);
@@ -146,7 +142,6 @@ class Scroll extends Component {
     this.scroll && this.scroll.scrollToElement.apply(this.scroll, arguments)
   }
 
-  @autobind
   finishPullUp(){
     this.scroll && this.scroll.finishPullUp()
   }
