@@ -1,9 +1,9 @@
 export function addClass(el, className) {
-  console.log(hasClass(el, className))
+  //console.log(hasClass(el, className))
   if (hasClass(el, className)) {
     return false
   } else {
-    console.log(el.className.split(' '))
+    //console.log(el.className.split(' '))
     let newClass = el.className.split(' ')
     newClass.push(className)
     // console.log(newClass)

@@ -1,62 +1,7 @@
-import jsonp from 'common/js/jsonp'
-import { commonParams, options } from './config'
-import axios from 'axios'
-
-export function getRecommend() {
-  const url =
-    'https://shc.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg'
-
-  const data = Object.assign({}, commonParams, {
-    platform: 'h5',
-    uin: 0,
-    needNewCode: 1
-  })
-
-  return jsonp(url, data, options)
-}
-
-export function getDiscList() {
-  var url = '/api/getDiscList'
-  const data = Object.assign({}, commonParams, {
-    platform: 'yqq',
-    hostUin: 0,
-    sin: 0,
-    ein: 29,
-    sortId: 5,
-    needNewCode: 0,
-    categoryId: 10000000,
-    rnd: Math.random(),
-    format: 'json'
-  })
-
-  return axios
-    .get(url, {
-      params: data
-    })
-    .then(res => {
-      return Promise.resolve(res.data)
-    })
-}
-
-// 获取歌单歌曲列表
-export function getSongList(disstid) {
-  let url = '/api/getCdInfo';
-
-  const data = Object.assign({}, commonParams, {
-    disstid,
-    type: 1,
-    json: 1,
-    utf8: 1,
-    onlysong: 0,
-    platform: 'yqq',
-    hostUin: 0,
-    needNewCode: 0
-  });
-
-  return axios.get(url, {
-    params: data
-  }).then((res) => {
-    return Promise.resolve(res.data);
-  });
-};
-
+[
+  {"id":"16501","linkUrl":"http://y.qq.com/w/album.html?albummid=003PrXXR1ayIsf","picUrl":"http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/299966.jpg"},
+  {"id":"16481","linkUrl":"https://y.qq.com/m/act/sfhd/149.html?ADTAG=banner","picUrl":"http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/299857.jpeg"},
+  {"id":"16485","linkUrl":"https://y.qq.com/msa/270/0_5652.html","picUrl":"http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/299934.jpg"},
+  {"id":"16495","linkUrl":"https://y.qq.com/msa/360/6_5643.html","picUrl":"http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/298997.jpg"},
+  {"id":"14616","linkUrl":"http://y.qq.com/w/album.html?albummid=003z9kma13yhja","picUrl":"http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/300232.jpg"}
+]

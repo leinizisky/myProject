@@ -97,7 +97,7 @@ class Singer extends Component{
 	    })
 
 	    return hot.concat(ret)
-  }
+  	}
 
 }
 
