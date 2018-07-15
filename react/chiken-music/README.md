@@ -1,3 +1,8 @@
+![image](https://github.com/leinizisky/myProject/blob/master/react/chiken-music/ReadImage/music1.png)
+![image](https://github.com/leinizisky/myProject/blob/master/react/chiken-music/ReadImage/music2.png)
+![image](https://github.com/leinizisky/myProject/blob/master/react/chiken-music/ReadImage/music3.png)
+![image](https://github.com/leinizisky/myProject/blob/master/react/chiken-music/ReadImage/music4.png)
+
 ## 搭建react项目
 
 ### 全局安装create-react-app
