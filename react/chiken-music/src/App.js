@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 import Header from './components/header'
 import Tab from './components/Tab'
-import Recommend from './containers/Recommend'
-import Singer from './containers/Singer'
-import Rank from './containers/Rank'
-import Search from './containers/Search'
+import Recommend from './pages/Recommend'
+import Singer from './pages/Singer'
+import Rank from './pages/Rank'
+import Search from './pages/Search'
 
 class App extends Component {
   render() {

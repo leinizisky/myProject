@@ -1,11 +1,7 @@
 import React,{ Component } from 'react'
 import axios from 'axios'
-//import { Route } from 'react-router-dom'
-//import { getSingerList } from 'api/singer'
 import ListView from 'components/ListView'
 import SingerDataObj from 'common/js/singer'
-//import SingerDetail from 'containers/SingerDetail'
-
 import './style.less'
 
 const HOT_NAME = '热门'
@@ -18,32 +14,22 @@ class Singer extends Component{
 		this.state={
 			singers:[]
 		}
-		this.handleClick=this.handleClick.bind(this);
 	}
 
 	render(){
 		return(
 			<div className='singer'>
-				<ListView
-		          handleClick={this.handleClick}
-		          listData={this.state.singers}
-		        />
-		        {/*<Route path="/singer/:id" component={SingerDetail} />*/}
-		        hello
+				<ListView listData={this.state.singers} />
 			</div>
 		);
 	}
 
 	componentDidMount(){
-		axios.get('../api/singer.js').then((res) => {
+		axios.get('/api/singer.js').then((res) => {
 			this.setState({
-				singers:this._normalizeSingerList(res.data)
+				singers:this._normalizeSingerList(res.data.data)
 			});
 		});
-	}
-
-	handleClick(){
-		console.log('111')
 	}
 
 	_normalizeSingerList(list) {
@@ -95,7 +81,6 @@ class Singer extends Component{
 	    ret.sort((a, b) => {
 	      return a.title.charCodeAt(0) - b.title.charCodeAt(0)
 	    })
-
 	    return hot.concat(ret)
   	}
 
