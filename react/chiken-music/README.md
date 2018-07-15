@@ -1,4 +1,4 @@
-### 模仿别人项目，本地模拟数据完成页面的基本显示，具体功能还是未实现
+### 本地模拟数据完成页面的基本显示，具体功能还未实现
 ![image](https://github.com/leinizisky/myProject/blob/master/react/chiken-music/ReadImage/music1.png)
 ![image](https://github.com/leinizisky/myProject/blob/master/react/chiken-music/ReadImage/music2.png)
 ![image](https://github.com/leinizisky/myProject/blob/master/react/chiken-music/ReadImage/music3.png)
