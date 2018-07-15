@@ -1,6 +1,9 @@
 
 ### vue构建简单公司网站
-
+![images](https://github.com/leinizisky/myProject/blob/master/2018VueWeb/company/ReadImage/company1.png)
+![images](https://github.com/leinizisky/myProject/blob/master/2018VueWeb/company/ReadImage/company2.png)
+![images](https://github.com/leinizisky/myProject/blob/master/2018VueWeb/company/ReadImage/company3.png)
+![images](https://github.com/leinizisky/myProject/blob/master/2018VueWeb/company/ReadImage/company4.png)
 
 ## 项目构建
 
